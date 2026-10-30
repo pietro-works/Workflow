@@ -1,0 +1,39 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{{BUNDLE}}/pacs/pacs-hooks/hooks/pacs-reset-marker.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{{BUNDLE}}/pacs/pacs-hooks/hooks/pacs-mark-read.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{{BUNDLE}}/pacs/pacs-hooks/hooks/pacs-enforce-read.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

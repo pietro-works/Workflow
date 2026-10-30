@@ -1,0 +1,12 @@
+[
+ {
+  "id": 1,
+  "category": "WORKFLOW",
+  "kicker": "AI-ASSISTED DEVELOPMENT",
+  "headline": "Rock-Solid Workflows for Long-Horizon AI",
+  "highlight": "Long-Horizon AI",
+  "deck": "The instructions, hooks and checks behind AI-assisted engineering. Built to survive context windows.",
+  "bg": "bg-05.png (cover-cropped to 1920x1080)",
+  "footer": "CLAUDE CODE · PACS · HUMANIZE.MD · HEADROOM · BASH (replaces the month and year; the template was patched in a scratch copy)"
+ }
+]

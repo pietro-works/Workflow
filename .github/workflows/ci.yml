@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install tools (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ripgrep shellcheck jq
+          if ! command -v yq >/dev/null 2>&1; then
+            sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64
+            sudo chmod +x /usr/local/bin/yq
+          fi
+
+      - name: Install tools (macOS)
+        if: runner.os == 'macOS'
+        run: brew install ripgrep yq jq shellcheck
+
+      - name: Shellcheck
+        run: shellcheck -x install.sh tests/run.sh pacs/pacs-hooks/hooks/*.sh pacs/test/run_hook_tests.sh pacs/test/run_hook_scenarios.sh scripts/build-components.sh
+
+      - name: Components match CLAUDE.md
+        run: bash scripts/build-components.sh --check
+
+      - name: Installer and hook gate
+        run: bash tests/run.sh
+
+      - name: PACS linter tests
+        run: bash pacs/test/run_tests.sh
+
+      - name: PACS hook path-matching tests
+        run: bash pacs/test/run_hook_tests.sh
+
+      - name: PACS hook project-resolution scenarios
+        run: bash pacs/test/run_hook_scenarios.sh

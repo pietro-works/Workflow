@@ -1,0 +1,53 @@
+{
+ "kick": "HUMANIZE.md",
+ "flow": "scope · <b>write</b> · check",
+ "bg": "bg-17.png",
+ "cards": [
+  {
+   "num": "01",
+   "glyph": "flag",
+   "name": "Scope",
+   "l1": "public text only",
+   "l2": "chat stays terse"
+  },
+  {
+   "num": "02",
+   "glyph": "user",
+   "name": "Voice",
+   "l1": "start with the",
+   "l2": "point, no fluff"
+  },
+  {
+   "num": "03",
+   "glyph": "wrench",
+   "name": "Dashes",
+   "l1": "no em dashes",
+   "l2": "no emoji unasked"
+  },
+  {
+   "num": "04",
+   "glyph": "activity",
+   "name": "Rhythm",
+   "l1": "vary sentence",
+   "l2": "length and shape"
+  },
+  {
+   "num": "05",
+   "glyph": "filter",
+   "name": "Words",
+   "l1": "a banned list of",
+   "l2": "overused words"
+  },
+  {
+   "num": "06",
+   "glyph": "listchecks",
+   "name": "Check",
+   "l1": "seven questions",
+   "l2": "<span class=\"hi\">before it ships</span>",
+   "hero": true,
+   "tag": "nothing invented"
+  }
+ ],
+ "footL": "for anything a stranger reads",
+ "footR": "not a <b>content mill</b>"
+}

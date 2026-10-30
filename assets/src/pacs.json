@@ -1,0 +1,53 @@
+{
+ "kick": "How PACS works",
+ "flow": "spot · <b>tag</b> · verify",
+ "bg": "bg-02.png",
+ "cards": [
+  {
+   "num": "01",
+   "glyph": "eye",
+   "name": "Spot",
+   "l1": "coupled, distant,",
+   "l2": "and silent"
+  },
+  {
+   "num": "02",
+   "glyph": "flag",
+   "name": "Mint",
+   "l1": "next free number",
+   "l2": "append-only code"
+  },
+  {
+   "num": "03",
+   "glyph": "database",
+   "name": "Row",
+   "l1": "anchor, sync_with",
+   "l2": "fails_silently"
+  },
+  {
+   "num": "04",
+   "glyph": "code",
+   "name": "Tag",
+   "l1": "comment on the line",
+   "l2": "<span class=\"hi\">not exhaustive</span>",
+   "hero": true,
+   "tag": "floor, not ceiling"
+  },
+  {
+   "num": "05",
+   "glyph": "lock",
+   "name": "Gate",
+   "l1": "edits wait for a",
+   "l2": "full registry read"
+  },
+  {
+   "num": "06",
+   "glyph": "listchecks",
+   "name": "Report",
+   "l1": "name the rows you",
+   "l2": "actually opened"
+  }
+ ],
+ "footL": "bugs that never throw",
+ "footR": "stable codes, <b>never reused</b>"
+}

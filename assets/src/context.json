@@ -1,0 +1,53 @@
+{
+ "kick": "Surviving compaction",
+ "flow": "compress · <b>reset</b> · reread",
+ "bg": "bg-15.png",
+ "cards": [
+  {
+   "num": "01",
+   "glyph": "filter",
+   "name": "Compress",
+   "l1": "headroom trims",
+   "l2": "tool output"
+  },
+  {
+   "num": "02",
+   "glyph": "activity",
+   "name": "Grow",
+   "l1": "the session fills",
+   "l2": "with detail"
+  },
+  {
+   "num": "03",
+   "glyph": "layers",
+   "name": "Summarize",
+   "l1": "compaction keeps",
+   "l2": "the gist only"
+  },
+  {
+   "num": "04",
+   "glyph": "refresh",
+   "name": "Reset",
+   "l1": "SessionStart",
+   "l2": "<span class=\"hi\">clears the marker</span>",
+   "hero": true,
+   "tag": "no stale proof"
+  },
+  {
+   "num": "05",
+   "glyph": "eye",
+   "name": "Reread",
+   "l1": "registry read in",
+   "l2": "full, every time"
+  },
+  {
+   "num": "06",
+   "glyph": "database",
+   "name": "Files",
+   "l1": "rules, log, memory",
+   "l2": "live on disk"
+  }
+ ],
+ "footL": "long sessions, short memory",
+ "footR": "exact things <b>live on disk</b>"
+}

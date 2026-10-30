@@ -1,0 +1,53 @@
+{
+ "kick": "The change loop",
+ "flow": "read · <b>break</b> · prove",
+ "bg": "bg-14.png",
+ "cards": [
+  {
+   "num": "01",
+   "glyph": "search",
+   "name": "Read",
+   "l1": "git status, log",
+   "l2": "change log, PACS"
+  },
+  {
+   "num": "02",
+   "glyph": "lock",
+   "name": "Gate",
+   "l1": "no edit until the",
+   "l2": "registry is read"
+  },
+  {
+   "num": "03",
+   "glyph": "target",
+   "name": "Break",
+   "l1": "race, loop, retry,",
+   "l2": "<span class=\"hi\">attack your fix</span>",
+   "hero": true,
+   "tag": "try to break it first"
+  },
+  {
+   "num": "04",
+   "glyph": "listchecks",
+   "name": "Prove",
+   "l1": "the exact command",
+   "l2": "the honest result"
+  },
+  {
+   "num": "05",
+   "glyph": "database",
+   "name": "Trace",
+   "l1": "one line a change",
+   "l2": "why, proof, undo"
+  },
+  {
+   "num": "06",
+   "glyph": "gitbranch",
+   "name": "Commit",
+   "l1": "small, by pathspec",
+   "l2": "revert, not reset"
+  }
+ ],
+ "footL": "every change to a working system",
+ "footR": "say what <b>was not tested</b>"
+}
